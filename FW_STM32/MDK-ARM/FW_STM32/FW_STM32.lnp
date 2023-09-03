@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"fw_stm32\startup_stm32f103xb.o"
+"fw_stm32\main.o"
+"fw_stm32\gpio.o"
+"fw_stm32\usart.o"
+"fw_stm32\stm32f1xx_it.o"
+"fw_stm32\stm32f1xx_hal_msp.o"
+"fw_stm32\stm32f1xx_hal_gpio_ex.o"
+"fw_stm32\stm32f1xx_hal_tim.o"
+"fw_stm32\stm32f1xx_hal_tim_ex.o"
+"fw_stm32\stm32f1xx_hal_uart.o"
+"fw_stm32\stm32f1xx_hal.o"
+"fw_stm32\stm32f1xx_hal_rcc.o"
+"fw_stm32\stm32f1xx_hal_rcc_ex.o"
+"fw_stm32\stm32f1xx_hal_gpio.o"
+"fw_stm32\stm32f1xx_hal_dma.o"
+"fw_stm32\stm32f1xx_hal_cortex.o"
+"fw_stm32\stm32f1xx_hal_pwr.o"
+"fw_stm32\stm32f1xx_hal_flash.o"
+"fw_stm32\stm32f1xx_hal_flash_ex.o"
+"fw_stm32\stm32f1xx_hal_exti.o"
+"fw_stm32\system_stm32f1xx.o"
+--strict --scatter "FW_STM32\FW_STM32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FW_STM32.map" -o FW_STM32\FW_STM32.axf

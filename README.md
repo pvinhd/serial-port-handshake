@@ -2,6 +2,7 @@
 
 ## Firmware
 In folder `FW_STM32`
+
 <img src="/photos/pinout-config.jpg" alt="Alt text" title="Pinout Configuration">
 
 <img src="/photos/clock-config.jpg" alt="Alt text" title="Clock Configuration">
